@@ -1,0 +1,17 @@
+<h2>JavaScript Minifier</h2>
+
+<!-- Input Textarea for JavaScript Code -->
+<textarea
+  [(ngModel)]="jsCode"
+  class="input-js"
+  placeholder="Enter JavaScript code here"
+></textarea>
+
+<button class="minify-button" (click)="minifyCode()">Minify</button>
+
+<textarea
+  [readonly]="true"
+  [(ngModel)]="minifiedCode"
+  class="output-js"
+  placeholder="Minified JavaScript code will appear here"
+></textarea>

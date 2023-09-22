@@ -1,0 +1,30 @@
+<div class="container">
+    <label for="regexPattern">Regex Pattern:</label>
+    <input class = "regClass" type="text" id="regexPattern" [(ngModel)]="regexPattern" placeholder="Enter your regex here">
+
+    <div *ngIf="regexPattern != ''">
+        <div *ngIf="isValidPattern">
+            <h4>Regex Pattern is Valid</h4>
+        </div>
+        <div *ngIf="!isValidPattern">
+            <h3>Invalid Regex Pattern</h3>
+        </div>
+    </div>
+    <label for="inputText">Input Text:</label>
+    <textarea id="inputText" [(ngModel)]="inputText" placeholder="Enter a text string to test your regex"></textarea>
+  </div>
+  
+  <button (click)="testRegex()">Test Regex</button>
+  
+  <div *ngIf="isValidPattern">
+    <div *ngIf="matches">
+      <h3>Matches:</h3>
+      <ul>
+        <li *ngFor="let match of matches">{{ match }}</li>
+      </ul>
+    </div>
+    <div *ngIf="!matches">
+      <p>No matches found yet.</p>
+    </div>
+  </div>
+  

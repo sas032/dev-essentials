@@ -1,0 +1,14 @@
+<h2>JSON and CSV Converter</h2>
+<div class="container">
+    <div class="textarea-container">
+      <h2>JSON</h2>
+      <textarea [(ngModel)]="jsonText" placeholder="Enter JSON here"></textarea>
+      <button (click)="convertToJson()">Convert to JSON</button>
+    </div>
+    <div class="textarea-container">
+      <h2>CSV</h2>
+      <textarea [(ngModel)]="csvText" placeholder="Enter CSV here"></textarea>
+      <button (click)="convertToCsv()">Convert to CSV</button>
+    </div>
+  </div>
+  

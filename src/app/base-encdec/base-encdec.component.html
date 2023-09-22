@@ -1,0 +1,16 @@
+<div>
+  <h2>Base64 Encoder/ Decoder</h2>
+    <div>
+      <label for="input">Input:</label>
+      <textarea id="input" [(ngModel)]="input" placeholder="Enter text or Base64 string"></textarea>
+    </div>
+
+    <div>
+      <button (click)="encode()">Encode to Base64</button>
+      <button (click)="decode()">Decode from Base64</button>
+    </div>
+    <div>
+      <label for="output">Output:</label>
+      <textarea id="output" [(ngModel)]="output" placeholder="Your Encoded or Decoded value will appear here" readonly></textarea>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+
+    <h2>Password Generator</h2>
+  
+    <div class="controls">
+      <label for="length">Password Length:</label>
+      <input type="range" id="length" [(ngModel)]="passwordLength" min="6" max="20">
+      <span>{{ passwordLength }}</span>
+    </div>
+  
+    <div class="options">
+      <label for="uppercase">Include Uppercase Letters:</label>
+      <input type="checkbox" id="uppercase" [(ngModel)]="includeUppercase">
+    </div>
+  
+    <div class="options">
+      <label for="lowercase">Include Lowercase Letters:</label>
+      <input type="checkbox" id="lowercase" [(ngModel)]="includeLowercase">
+    </div>
+  
+    <div class="options">
+      <label for="numbers">Include Numbers:</label>
+      <input type="checkbox" id="numbers" [(ngModel)]="includeNumbers">
+    </div>
+  
+    <div class="options">
+      <label for="special">Include Special Characters:</label>
+      <input type="checkbox" id="special" [(ngModel)]="includeSpecial">
+    </div>
+  
+    <button (click)="generatePassword()">Generate Password</button>
+  
+    <div class="generated-password">
+      <label for="password">Generated Password:</label>
+      <input type="text" id="password" [value]="generatedPassword" readonly>
+    </div>
+  

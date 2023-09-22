@@ -1,0 +1,27 @@
+<!-- <div class="container">
+    <textarea [(ngModel)]="leftText" class="text-area"></textarea>
+    <textarea [(ngModel)]="rightText" class="text-area"></textarea>
+</div>
+<button (click)="compareTexts()">Compare Texts</button>
+
+<div class="container">
+<div [innerHTML]="diff" class="diff-container"></div>
+</div>
+   -->
+
+
+   <div class="container">
+    <textarea [(ngModel)]="leftText" class="text-area"></textarea>
+    <textarea [(ngModel)]="rightText" class="text-area"></textarea>
+  </div>
+  <button (click)="compareTexts()">Compare Texts</button>
+  
+  <div class="container">
+    <div class="diff-container">
+      <pre>
+        <span *ngFor="let word of leftText.split(' '); let i = index" [ngClass]="diff[i]">{{ word }}</span>
+      </pre>
+    </div>
+  </div>
+  
+  

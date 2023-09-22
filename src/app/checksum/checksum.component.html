@@ -1,0 +1,21 @@
+
+    <h2>Checksum Calculator</h2>
+    <div class="form-group">
+      <label for="inputString">Input String</label>
+      <input type="text" id="inputString" [(ngModel)]="inputString" placeholder="Enter a string">
+    </div>
+    <div class="form-group">
+      <label for="algorithm">Select Algorithm</label>
+      <select id="algorithm" [(ngModel)]="selectedAlgorithm">
+        <option value="md5">MD5</option>
+        <option value="sha256">SHA-256</option>
+      </select>
+    </div>
+    <button (click)="calculateChecksum()">Calculate</button>
+    <div class="result">
+      <!-- <p>Checksum:</p>
+      <p>{{ checksum }}</p> -->
+      <textarea id="output" placeholder="Your Output will appear here" value= "{{checksum}}" readonly></textarea>
+    
+    </div>
+  

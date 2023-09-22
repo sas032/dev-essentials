@@ -1,0 +1,153 @@
+/* Container for the entire form */
+/* div {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+} */
+
+/* Form header styling */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label styling */
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Input fields styling */
+input[type="text"],
+select {
+  width: 95%; /* Adjust the width as needed */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* Query Params section styling */
+.param-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.param-key,
+.param-value {
+  flex: 1;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin-top: 10px; */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Response section styling */
+.response {
+  margin-top: 20px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+pre {
+  height: 40vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+
+/* Container for the entire form */
+/* Container for the entire form */
+.cont {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to next line if the content doesn't fit */
+}
+
+/* Style for the first .form-group div (Request Type) */
+.form-group:nth-child(1) {
+  flex: 1; /* Takes 1 part of the available space */
+}
+
+/* Style for the second .form-group div (Endpoint) */
+.form-group:nth-child(2) {
+  flex: 2; /* Takes 2 parts of the available space */
+}
+
+
+.parma {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.param-groups {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.param-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.param-key,
+.param-value {
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add-param-button {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+
+

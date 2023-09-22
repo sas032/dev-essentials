@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+  }
+  
+  .text-area {
+    flex: 1;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  .diff-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .diff-word {
+    background-color: yellow;
+  }
+  

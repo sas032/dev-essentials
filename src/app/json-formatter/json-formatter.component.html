@@ -1,0 +1,15 @@
+<div class="main-top">
+    <h1>JSON/ XML Formatter</h1>
+    <i class="fas fa-user-cog"></i>
+</div>
+<div>
+    <div class="buttons">
+      <button (click)="setFormatter('json')">JSON</button>
+      <button (click)="setFormatter('xml')">XML</button>
+    </div>
+    <pre>{{ formattedOutput }}</pre>
+    <textarea [(ngModel)]="input" [placeholder]="placeholder"></textarea>
+    <button (click)="format()">Format</button>
+   
+</div>
+  

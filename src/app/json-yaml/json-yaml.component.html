@@ -1,0 +1,32 @@
+<!-- <div>
+    <h2>JSON</h2>
+    <div class="container">
+        <textarea class="json-textarea" (input)="onInputChange($event)" placeholder="Enter your JSON"></textarea>
+    </div>
+    <br><br><br>
+    <h2>YAML</h2>
+    <div class="container">
+        <textarea class="yaml-textarea" [value]="yamlText" readonly></textarea>
+    </div>
+</div> -->
+
+<div class="container">
+<h2>JSON and YAML Converter</h2>
+  <div class="text-area-container">
+      <div class="text-area">
+        <h2>JSON</h2>
+        <textarea class="json-textarea" [(ngModel)]="jsonText" placeholder="Enter your JSON here or YAML on the right"></textarea>
+      </div>
+      <div class="text-area">
+        <h2>YAML</h2>
+        <textarea class="yaml-textarea" [(ngModel)]="yamlText" placeholder="Enter your YAML here or JSON on the left"></textarea>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="convert-button" (click)="convert()">Convert</button>
+    </div>
+  </div>
+  
+  
+  
+  

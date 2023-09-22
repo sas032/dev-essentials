@@ -1,0 +1,18 @@
+<h2>CSS Minifier</h2>
+
+<textarea 
+  [(ngModel)]="inputCss" 
+  class="input-js" 
+  placeholder="Enter CSS here">
+</textarea>
+
+<button class="minify-button" (click)="minifyCss()">Minify</button>
+
+<textarea 
+  [readonly]="true"
+  class = "output-js" 
+  [(ngModel)]="outputCss"
+  placeholder="Minified CSS code will appear here"
+></textarea>
+
+  

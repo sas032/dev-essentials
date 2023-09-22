@@ -1,0 +1,163 @@
+/* Updated Eye-Catching Navigation CSS */
+
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  background: #dfe9f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background: #34495e; /* Dark blue background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 20px;
+  color: #ecf0f1; /* Light gray text color */
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Add this CSS to make the "DevTechTool" text eye-catching */
+.logo {
+  font-size: 24px !important; /* Adjust the font size as needed */
+    color: #e74c3c !important; /* Set the text color to the desired color (e.g., red) */
+    font-weight: bold !important; /* Make the text bold */
+    letter-spacing: 2px !important; /* Add some letter spacing for emphasis */
+    text-transform: initial !important; /* Add some letter spacing for emphasis */
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.navClass {
+  display: block;
+  color: #ecf0f1; /* Light gray text color */
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: background 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navClass:hover {
+  background: #e74c3c; /* Red background color on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Add more styles or adjustments as needed */
+
+
+
+/* Updated CSS for the Right Panel */
+.main {
+  padding: 20px;
+  /* width: calc(100% - 280px);  */
+  margin-left: 280px; 
+  /* background: #ecf0f1; */
+  height: 100px !important
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center;
+  margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.main-top i {
+  color: #6e6d6d; /* Slightly darker gray text color */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main-skills {
+  display: block;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+  gap: 20px; /* Add spacing between cards */
+  justify-content: center; /* Center-align cards */
+}
+
+.main-skills .card {
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.main-skills .card:hover {
+  transform: translateY(-5px); /* Move card up slightly on hover */
+}
+
+.main-skills .card h3 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-size: 18px; /* Slightly larger font size */
+  color: #333; /* Dark text color */
+}
+
+.main-skills .card p {
+  font-size: 14px; /* Increase font size for better readability */
+  margin-bottom: 15px; /* Add some spacing at the bottom */
+}
+
+.main-skills .card button {
+  background: #e74c3c; /* Red background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.main-skills .card button:hover {
+  background: #c0392b; /* Darker red on hover */
+}

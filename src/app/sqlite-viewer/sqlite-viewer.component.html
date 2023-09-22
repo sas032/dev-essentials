@@ -1,0 +1,35 @@
+<!-- <input type="file" (change)="handleFileInput($event)" accept=".sqlite3">
+<table *ngIf="tableData">
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableData.headers">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData.rows">
+      <td *ngFor="let value of row">{{ value }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<div class="container">
+    <h2>SQLite Database Viewer</h2>
+    <div class="input-container">
+      <input type="file" (change)="handleFileInput($event)" accept=".sqlite3" />
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let header of tableData.headers">{{ header }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of tableData.rows">
+            <td *ngFor="let value of row">{{ value }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
