@@ -26,6 +26,8 @@ import { ChecksumComponent } from './checksum/checksum.component';
 import { PwdGeneratorComponent } from './pwd-generator/pwd-generator.component';
 import { CssMinifierComponent } from './css-minifier/css-minifier.component';
 import { JsMinifyComponent } from './js-minify/js-minify.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 
 @NgModule({
