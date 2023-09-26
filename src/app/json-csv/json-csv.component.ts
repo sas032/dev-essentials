@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from '../services/notification.service';
 
 @Component({
   selector: 'app-json-csv',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./json-csv.component.css']
 })
 export class JsonCsvComponent {
+
+  constructor(public notificationSvc: NotificationService) {}
   
   jsonText: string = '';
   csvText: string = '';
@@ -18,6 +21,7 @@ export class JsonCsvComponent {
       }
     } catch (error) {
       console.error(error);
+      this.sendError("Wrong JSON. Check your JSON");
     }
   }
 
@@ -29,6 +33,7 @@ export class JsonCsvComponent {
       }
     } catch (error) {
       console.error(error);
+      this.sendError("Wrong CSV. Check your CSV");
     }
   }
 
@@ -153,5 +158,7 @@ export class JsonCsvComponent {
     }
   }  
 
-
+  sendError(err: string){
+    this.notificationSvc.error('Hello World', err);
+  }
 }

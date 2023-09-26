@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from '../services/notification.service';
 
 @Component({
   selector: 'app-json-yaml',
@@ -46,18 +47,28 @@ export class JsonYamlComponent {
 
   jsonText: string = '';
   yamlText: string = '';
+  type: string = '';
+
+  constructor(public notificationSvc: NotificationService) {}
+  
+  sendError(err: string){
+    this.notificationSvc.error('Hello World', err);
+  }
 
   convert() {
     try {
       if (this.jsonText) {
+        this.type = 'JSON';
         const jsonObject = JSON.parse(this.jsonText);
         this.yamlText = this.convertObjectToYaml(jsonObject);
       } else if (this.yamlText) {
+        this.type = 'YAML';
         const yamlObject = this.convertYamlToObject(this.yamlText);
         this.jsonText = JSON.stringify(yamlObject, null, 2);
       }
     } catch (error) {
       console.error(error);
+      this.sendError("Invalid "+ this.type);
     }
   }
 

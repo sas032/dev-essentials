@@ -26,7 +26,8 @@ import { ChecksumComponent } from './checksum/checksum.component';
 import { PwdGeneratorComponent } from './pwd-generator/pwd-generator.component';
 import { CssMinifierComponent } from './css-minifier/css-minifier.component';
 import { JsMinifyComponent } from './js-minify/js-minify.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { NotificationListComponent } from './notification/notification.component';
+import { NotificationService } from './services/notification.service';
 
 
 
@@ -53,7 +54,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ChecksumComponent,
     PwdGeneratorComponent,
     CssMinifierComponent,
-    JsMinifyComponent
+    JsMinifyComponent,
+    NotificationListComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from '../services/notification.service';
 
 @Component({
   selector: 'app-json-formatter',
@@ -6,11 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./json-formatter.component.css']
 })
 export class JsonFormatterComponent {
-
+  constructor(public notificationSvc: NotificationService) {}
+  
+  
   formatter: string = 'json';
   input: string = '';
   formattedOutput: string = '';
   placeholder: string = 'Enter JSON here';
+
+  sendError(err: string){
+    this.notificationSvc.error('Hello World', err);
+  }
 
   setFormatter(formatter: string) {
     this.formatter = formatter;
@@ -35,6 +42,7 @@ export class JsonFormatterComponent {
       }
     } catch (error) {
       this.formattedOutput = 'Invalid ' + this.formatter.toUpperCase() + '!';
+      this.sendError("Invalid "+ this.formatter.toUpperCase())
     }
   }
 
@@ -53,7 +61,8 @@ export class JsonFormatterComponent {
       const formattedXml = serializer.serializeToString(xmlDoc);
       return formattedXml;
     } else {
-      return 'Invalid XML!';
+      this.sendError("Invalid XML")
+      return '';
     }
   }
 
