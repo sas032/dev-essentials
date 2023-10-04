@@ -161,3 +161,25 @@ li {
 .main-skills .card button:hover {
   background: #c0392b; /* Darker red on hover */
 }
+
+
+/* CSS for the parent container */
+.something {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; 
+}
+
+/* CSS for the anchor tags */
+.something a {
+  text-decoration: none; /* Remove underlines from links */
+  padding: 10px 15px; /* Add padding for spacing around the links */
+  /* background-color: #007bff; */
+  color: black!important;
+  border-radius: 5px; /* Rounded corners for links */
+  /* margin-right: 10px;  */
+}
+
+/* Style the last link to remove the right margin */
+.something a:last-child {
+  margin-right: 0;
+}

@@ -28,6 +28,11 @@ import { CssMinifierComponent } from './css-minifier/css-minifier.component';
 import { JsMinifyComponent } from './js-minify/js-minify.component';
 import { NotificationListComponent } from './notification/notification.component';
 import { NotificationService } from './services/notification.service';
+import { ContactComponent } from './contact/contact.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
+import { ImageBackgroundRemovalComponent } from './image-background-removal/image-background-removal.component';
+import { ImageToPdfConverterComponent } from './image-to-pdf-converter/image-to-pdf-converter.component';
 
 
 
@@ -55,7 +60,12 @@ import { NotificationService } from './services/notification.service';
     PwdGeneratorComponent,
     CssMinifierComponent,
     JsMinifyComponent,
-    NotificationListComponent
+    NotificationListComponent,
+    ContactComponent,
+    PrivacyComponent,
+    TermsComponent,
+    ImageBackgroundRemovalComponent,
+    ImageToPdfConverterComponent
   ],
   imports: [
     BrowserModule,

@@ -20,6 +20,11 @@ import { ChecksumComponent } from './checksum/checksum.component';
 import { PwdGeneratorComponent } from './pwd-generator/pwd-generator.component';
 import { CssMinifierComponent } from './css-minifier/css-minifier.component';
 import { JsMinifyComponent } from './js-minify/js-minify.component';
+import { TermsComponent } from './terms/terms.component';
+import { ContactComponent } from './contact/contact.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { ImageBackgroundRemovalComponent } from './image-background-removal/image-background-removal.component';
+import { ImageToPdfConverterComponent } from './image-to-pdf-converter/image-to-pdf-converter.component';
 
 const routes: Routes = [{
   path: '',
@@ -44,7 +49,12 @@ const routes: Routes = [{
     { path: 'checksum-calculator', component:ChecksumComponent},
     { path: 'password-generator', component: PwdGeneratorComponent},
     { path: 'css-minifier', component:CssMinifierComponent},
-    { path: 'js-minifier', component: JsMinifyComponent}
+    { path: 'js-minifier', component: JsMinifyComponent},
+    { path: 'terms-and-conditions', component:TermsComponent},
+    { path: 'contact', component:ContactComponent},
+    { path: 'privacy-policy', component:PrivacyComponent},
+    { path: 'background-remove', component:ImageBackgroundRemovalComponent},
+    { path: 'image-to-pdf', component:ImageToPdfConverterComponent},
   ],
 },];
 
