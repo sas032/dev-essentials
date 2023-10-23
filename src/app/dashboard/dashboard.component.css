@@ -132,6 +132,17 @@ li {
   transition: transform 0.3s ease; 
 }
 
+.main-skills .card2 {
+  background: #fff;
+  text-align: left!important;
+  border-radius: 20px;
+  padding: 30px; 
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
 .main-skills .card:hover {
   transform: translateY(-5px); /* Move card up slightly on hover */
 }

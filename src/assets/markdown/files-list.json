@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Undetstanding Load Balancing",
+        "name": "load-balancing-demystified",
+        "description": "Explore the world of load balancing with a deep dive into horizontal and vertical scaling. Learn about popular load balancing algorithms, their pros and cons, and when to use each.",
+        "srcs":"../images/defaultImg.jpg"
+    }
+    
+]

@@ -25,6 +25,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ImageBackgroundRemovalComponent } from './image-background-removal/image-background-removal.component';
 import { ImageToPdfConverterComponent } from './image-to-pdf-converter/image-to-pdf-converter.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { ArticleListComponent } from './article-list/article-list.component';
 
 const routes: Routes = [{
   path: '',
@@ -55,6 +57,8 @@ const routes: Routes = [{
     { path: 'privacy-policy', component:PrivacyComponent},
     { path: 'background-remove', component:ImageBackgroundRemovalComponent},
     { path: 'image-to-pdf', component:ImageToPdfConverterComponent},
+    { path: 'blog', component: ArticleListComponent },
+    { path: 'article/:name', component: ArticleDetailComponent },
   ],
 },];
 

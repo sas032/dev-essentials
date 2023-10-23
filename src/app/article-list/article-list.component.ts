@@ -1,22 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+import { MarkdownService } from '../services/markdown.service';
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-article-list',
+  templateUrl: './article-list.component.html',
+  styleUrls: ['./article-list.component.css'],
 })
-export class DashboardComponent {
+export class ArticleListComponent implements OnInit {
+  markdownFiles: any = []; 
 
   constructor(private router: Router, private http: HttpClient) {}
-
-  isRootPath(): boolean {
-    return this.router.url === '/';
-  }
-
-  markdownFiles: any = []; 
 
   ngOnInit(): void {
     this.http.get<string[]>('/assets/markdown/files-list.json').subscribe((data:any) => {
@@ -31,5 +26,4 @@ export class DashboardComponent {
   openArticle(filename: string): void {
     this.router.navigate(['/article', filename]);
   }
-
 }

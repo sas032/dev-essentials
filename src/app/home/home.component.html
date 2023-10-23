@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div class="news-list">
+    <div class="news-card" *ngFor="let newsItem of techNews">
+      <div class="news-title">{{ newsItem.title }}</div>
+      <div class="news-description">{{ newsItem.description }}</div>
+      <div class="news-link">
+        <a [href]="newsItem.link" target="_blank">Read more</a>
+      </div>
+    </div>
+  </div>
+  

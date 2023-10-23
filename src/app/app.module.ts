@@ -33,7 +33,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { ImageBackgroundRemovalComponent } from './image-background-removal/image-background-removal.component';
 import { ImageToPdfConverterComponent } from './image-to-pdf-converter/image-to-pdf-converter.component';
-
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 
 @NgModule({
@@ -65,13 +66,15 @@ import { ImageToPdfConverterComponent } from './image-to-pdf-converter/image-to-
     PrivacyComponent,
     TermsComponent,
     ImageBackgroundRemovalComponent,
-    ImageToPdfConverterComponent
+    ImageToPdfConverterComponent,
+    ArticleListComponent,
+    ArticleDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [NotificationService],
   bootstrap: [AppComponent]

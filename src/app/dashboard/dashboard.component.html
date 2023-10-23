@@ -28,6 +28,10 @@
             <li><a href="/" class="logo">
                 <span class="nav-item"><span style="color: #e74c3c;">DevTechTool</span></span>
             </a></li>
+            <li><a class = "navClass" routerLink="/">
+                <i class="fas fa-wallet"></i>
+                <span class="nav-item">BLOG AND NEWS</span>
+            </a></li>
             <li><a class = "navClass" routerLink="/url-encoder-decoder">
                 <i class="fas fa-wallet"></i>
                 <span class="nav-item">URL ENCODER</span>
@@ -115,7 +119,10 @@
         <div class="main-skills">
             <div class="card">
                 <div *ngIf="isRootPath()">
-                    <div style="background-color: #f0f0f0; text-align: center; font-family: Arial, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 80vh;">
+                    <h1 style="margin-bottom: 30px; color: #e74c3c; border: none; border-radius: 5px; margin-top: 20px; cursor: pointer;">
+                        Latest Posts
+                    </h1>
+                    <!-- <div style="background-color: #f0f0f0; text-align: center; font-family: Arial, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 80vh;">
 
                         <h1 style="font-size: 2.5rem; color: #333;">Welcome to <span style="color: #e74c3c;">DevTechTool</span></h1>
                     
@@ -127,7 +134,23 @@
                             Get Started with URL encoding
                         </button></a>
                     
-                    </div>
+                    </div> -->
+                    
+                        <div class="article-list">
+                            <div *ngFor="let item of markdownFiles">
+                                <div class="card card2" style="background-color: beige; margin-bottom: 10px;">
+                                    <div style="flex: 1!important;">
+                                        <!-- <img [src]="item.srcs" alt="Article Image" class="article-image"> -->
+                                    </div>
+                                    <div style="flex: 3!important;">
+                                        <h2 class="article-title" style="margin-bottom: 10px;">{{ item.title }}</h2>
+                                        <p class="article-description">{{ item.description }}</p>
+                                        <button class="read-more-button" (click)="openArticle(item.name)">Read More</button>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                   
                 <router-outlet></router-outlet>

@@ -1,0 +1,7 @@
+<div class="article-list">
+  <div *ngFor="let item of markdownFiles" class="article-card">
+    <h2 class="article-title">{{ item.name }}</h2>
+    <p class="article-description">{{ item.description }}</p>
+    <button class="read-more-button" (click)="openArticle(item.name)">Read More</button>
+  </div>
+</div>
