@@ -1,15 +1,16 @@
 [
     {
-        "title": "Understanding Load Balancing",
-        "name": "load-balancing-demystified",
-        "description": "Explore the world of load balancing with a deep dive into horizontal and vertical scaling. Learn about popular load balancing algorithms, their pros and cons, and when to use each.",
-        "srcs":"../images/defaultImg.jpg"
-    },
-    {
         "title": "Microservices Architecture in a single shot",
         "name": "microservices-architecture",
         "description": "Discover the world of Microservices Architecture: Learn why, when, and how to use it. Explore its advantages, drawbacks, and optimization strategies for efficient, scalable systems.",
         "srcs":"../images/defaultImg.jpg"
+    },
+    {
+        "title": "Understanding Load Balancing",
+        "name": "load-balancing-demystified",
+        "description": "Explore the world of load balancing with a deep dive into horizontal and vertical scaling. Learn about popular load balancing algorithms, their pros and cons, and when to use each.",
+        "srcs":"../images/defaultImg.jpg"
     }
+    
     
 ]
